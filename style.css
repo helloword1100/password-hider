@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+:root{
+    --primary-color:silver;
+    --secondary-color:#000;
+    --thirdly-color:white;
+}
+
+.dark-mode{
+    --primary-color: black;
+    --secondary-color: white;
+    --thirdly-color:black;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+.password-hider-main{
+    width: 266px;
+  height: 2.5vw;
+   
+  background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  
+    display: flex;
+  align-items: center;
+}
+.password-hider-main i{
+    float: right;
+    font-size: 20px;
+    color: var(--thirdly-color);
+}
+.password-hider-main input{
+    border: none;
+  outline: none;
+  background-color: var(--secondary-color);
+  width: 20vw;
+  color: var(--thirdly-color);
+  height: 2vw;
+  text-align: center;
+}
+.header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 12px 12px;
+    justify-content: space-evenly;
+    color: var(--secondary-color);
+}
